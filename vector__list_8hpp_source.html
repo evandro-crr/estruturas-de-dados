@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EstruturaDeDados: Código-Fonte de /home/evandrocrr/Documents/Workspace/UNIVALI/ed_aluno/include/vector_list.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EstruturaDeDados
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">vector_list.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vector__list_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classVectorList.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classVectorList.html">VectorList</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classVectorList.html#a10c5b697dab1d4051e4f6e96978be8bd">   22</a></span>  <a class="code hl_function" href="classVectorList.html#a10c5b697dab1d4051e4f6e96978be8bd">VectorList</a>(<span class="keywordtype">size_t</span> <a class="code hl_function" href="classVectorList.html#aced32e033408d5697051741bece68532">capacity</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classVectorList.html#a2fe52ab1d7378917b36c30f30b0c8114">   27</a></span>  <a class="code hl_function" href="classVectorList.html#a2fe52ab1d7378917b36c30f30b0c8114">~VectorList</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classVectorList.html#adcfacff419fd6e0b21c7b7cabc906065">   35</a></span>  <a class="code hl_function" href="classVectorList.html#adcfacff419fd6e0b21c7b7cabc906065">VectorList</a>(<span class="keyword">const</span> <a class="code hl_class" href="classVectorList.html">VectorList</a> &amp;list);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classVectorList.html#ae84ce2e611ad9dbeb3584e0612961d16">   43</a></span>  <a class="code hl_class" href="classVectorList.html">VectorList</a> &amp;<a class="code hl_function" href="classVectorList.html#ae84ce2e611ad9dbeb3584e0612961d16">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classVectorList.html">VectorList</a> &amp;list);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classVectorList.html#a5f27a1237e2b577f5eb61229f67d5fdd">   50</a></span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="classVectorList.html#a5f27a1237e2b577f5eb61229f67d5fdd">size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classVectorList.html#a7ba6e916d1d9f0f3c3b73883eaf9fc9a">   57</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classVectorList.html#a7ba6e916d1d9f0f3c3b73883eaf9fc9a">empty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classVectorList.html#aced32e033408d5697051741bece68532">   65</a></span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="classVectorList.html#aced32e033408d5697051741bece68532">capacity</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classVectorList.html#aeecc76026d07f96e60c043c6cb311c8e">   75</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classVectorList.html#aeecc76026d07f96e60c043c6cb311c8e">push_back</a>(<span class="keyword">const</span> T &amp;value);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classVectorList.html#afe42d07454b3fe1c0670798ea14d45fd">   85</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classVectorList.html#afe42d07454b3fe1c0670798ea14d45fd">insert</a>(<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> T &amp;value);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classVectorList.html#a954cb3f03ad1815a98f36e95cce22e61">   92</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classVectorList.html#a954cb3f03ad1815a98f36e95cce22e61">pop_back</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classVectorList.html#a03cd89736bee2cbad93f4151ee7d38d2">  100</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classVectorList.html#a03cd89736bee2cbad93f4151ee7d38d2">remove</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classVectorList.html#a97cf00044e51a6bff70ca2fc336c3df0">  105</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classVectorList.html#a97cf00044e51a6bff70ca2fc336c3df0">clear</a>();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classVectorList.html#a1d1ba9e8d94e3cd15b4cddca2c485c55">  114</a></span>  T &amp;<a class="code hl_function" href="classVectorList.html#a1d1ba9e8d94e3cd15b4cddca2c485c55">find</a>(<span class="keyword">const</span> T &amp;item);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classVectorList.html#aaad3efb0ca872db460f1640581b70c8a">  123</a></span>  <span class="keyword">const</span> T &amp;<a class="code hl_function" href="classVectorList.html#aaad3efb0ca872db460f1640581b70c8a">find</a>(<span class="keyword">const</span> T &amp;item) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classVectorList.html#a159dd4b2e83d4f4a54c8fe2282e9e90d">  131</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classVectorList.html#a159dd4b2e83d4f4a54c8fe2282e9e90d">contains</a>(<span class="keyword">const</span> T &amp;item) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="classVectorList.html#a976d014f050006d8413575a31acc0b08">  140</a></span>  T &amp;<a class="code hl_function" href="classVectorList.html#a976d014f050006d8413575a31acc0b08">operator[]</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="classVectorList.html#a32a17be651b58e3c6a589ba71076046f">  149</a></span>  <span class="keyword">const</span> T &amp;<a class="code hl_function" href="classVectorList.html#a32a17be651b58e3c6a589ba71076046f">operator[]</a>(<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classVectorList.html#ace39e6e0fa4479f3263553ad7da9db90">  155</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classVectorList.html#ace39e6e0fa4479f3263553ad7da9db90">print</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  T *data;          </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keywordtype">size_t</span> _size;     </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordtype">size_t</span> _capacity; </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>};</div>
+</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#include &quot;../src/vector_list.hpp&quot;</span></div>
+<div class="ttc" id="aclassVectorList_html"><div class="ttname"><a href="classVectorList.html">VectorList</a></div><div class="ttdoc">Representa uma lista de elementos do tipo genérico T.</div><div class="ttdef"><b>Definição</b> vector_list.hpp:15</div></div>
+<div class="ttc" id="aclassVectorList_html_a03cd89736bee2cbad93f4151ee7d38d2"><div class="ttname"><a href="classVectorList.html#a03cd89736bee2cbad93f4151ee7d38d2">VectorList::remove</a></div><div class="ttdeci">void remove(size_t index)</div><div class="ttdoc">Remove o elemento na posição especificada.</div></div>
+<div class="ttc" id="aclassVectorList_html_a10c5b697dab1d4051e4f6e96978be8bd"><div class="ttname"><a href="classVectorList.html#a10c5b697dab1d4051e4f6e96978be8bd">VectorList::VectorList</a></div><div class="ttdeci">VectorList(size_t capacity)</div><div class="ttdoc">Construtor da classe. Cria uma lista com a capacidade definida.</div></div>
+<div class="ttc" id="aclassVectorList_html_a159dd4b2e83d4f4a54c8fe2282e9e90d"><div class="ttname"><a href="classVectorList.html#a159dd4b2e83d4f4a54c8fe2282e9e90d">VectorList::contains</a></div><div class="ttdeci">bool contains(const T &amp;item) const</div><div class="ttdoc">Verifica se um elemento está contido na lista.</div></div>
+<div class="ttc" id="aclassVectorList_html_a1d1ba9e8d94e3cd15b4cddca2c485c55"><div class="ttname"><a href="classVectorList.html#a1d1ba9e8d94e3cd15b4cddca2c485c55">VectorList::find</a></div><div class="ttdeci">T &amp; find(const T &amp;item)</div><div class="ttdoc">Encontra um elemento na lista.</div></div>
+<div class="ttc" id="aclassVectorList_html_a2fe52ab1d7378917b36c30f30b0c8114"><div class="ttname"><a href="classVectorList.html#a2fe52ab1d7378917b36c30f30b0c8114">VectorList::~VectorList</a></div><div class="ttdeci">~VectorList()</div><div class="ttdoc">Destruidor da classe. Libera a memória alocada para os dados.</div></div>
+<div class="ttc" id="aclassVectorList_html_a32a17be651b58e3c6a589ba71076046f"><div class="ttname"><a href="classVectorList.html#a32a17be651b58e3c6a589ba71076046f">VectorList::operator[]</a></div><div class="ttdeci">const T &amp; operator[](size_t index) const</div><div class="ttdoc">Acesso ao elemento na posição especificada (const).</div></div>
+<div class="ttc" id="aclassVectorList_html_a5f27a1237e2b577f5eb61229f67d5fdd"><div class="ttname"><a href="classVectorList.html#a5f27a1237e2b577f5eb61229f67d5fdd">VectorList::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Retorna o número de elementos armazenados na lista.</div></div>
+<div class="ttc" id="aclassVectorList_html_a7ba6e916d1d9f0f3c3b73883eaf9fc9a"><div class="ttname"><a href="classVectorList.html#a7ba6e916d1d9f0f3c3b73883eaf9fc9a">VectorList::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdoc">Verifica se a lista está vazia.</div></div>
+<div class="ttc" id="aclassVectorList_html_a954cb3f03ad1815a98f36e95cce22e61"><div class="ttname"><a href="classVectorList.html#a954cb3f03ad1815a98f36e95cce22e61">VectorList::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdoc">Remove o último elemento da lista.</div></div>
+<div class="ttc" id="aclassVectorList_html_a976d014f050006d8413575a31acc0b08"><div class="ttname"><a href="classVectorList.html#a976d014f050006d8413575a31acc0b08">VectorList::operator[]</a></div><div class="ttdeci">T &amp; operator[](size_t index)</div><div class="ttdoc">Acesso ao elemento na posição especificada.</div></div>
+<div class="ttc" id="aclassVectorList_html_a97cf00044e51a6bff70ca2fc336c3df0"><div class="ttname"><a href="classVectorList.html#a97cf00044e51a6bff70ca2fc336c3df0">VectorList::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Limpa todos os elementos da lista.</div></div>
+<div class="ttc" id="aclassVectorList_html_aaad3efb0ca872db460f1640581b70c8a"><div class="ttname"><a href="classVectorList.html#aaad3efb0ca872db460f1640581b70c8a">VectorList::find</a></div><div class="ttdeci">const T &amp; find(const T &amp;item) const</div><div class="ttdoc">Encontra um elemento na lista (const).</div></div>
+<div class="ttc" id="aclassVectorList_html_ace39e6e0fa4479f3263553ad7da9db90"><div class="ttname"><a href="classVectorList.html#ace39e6e0fa4479f3263553ad7da9db90">VectorList::print</a></div><div class="ttdeci">void print() const</div><div class="ttdoc">Imprime os elementos da lista no formato &quot;elemento1, elemento2,...&quot;.</div></div>
+<div class="ttc" id="aclassVectorList_html_aced32e033408d5697051741bece68532"><div class="ttname"><a href="classVectorList.html#aced32e033408d5697051741bece68532">VectorList::capacity</a></div><div class="ttdeci">size_t capacity() const</div><div class="ttdoc">Retorna a capacidade atual da lista.</div></div>
+<div class="ttc" id="aclassVectorList_html_adcfacff419fd6e0b21c7b7cabc906065"><div class="ttname"><a href="classVectorList.html#adcfacff419fd6e0b21c7b7cabc906065">VectorList::VectorList</a></div><div class="ttdeci">VectorList(const VectorList &amp;list)</div><div class="ttdoc">Construtor de cópia. Cria uma nova lista como uma cópia da lista fornecida.</div></div>
+<div class="ttc" id="aclassVectorList_html_ae84ce2e611ad9dbeb3584e0612961d16"><div class="ttname"><a href="classVectorList.html#ae84ce2e611ad9dbeb3584e0612961d16">VectorList::operator=</a></div><div class="ttdeci">VectorList &amp; operator=(const VectorList &amp;list)</div><div class="ttdoc">Operador de atribuição. Atribui os elementos de uma lista a outra.</div></div>
+<div class="ttc" id="aclassVectorList_html_aeecc76026d07f96e60c043c6cb311c8e"><div class="ttname"><a href="classVectorList.html#aeecc76026d07f96e60c043c6cb311c8e">VectorList::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value)</div><div class="ttdoc">Adiciona um elemento no final da lista.</div></div>
+<div class="ttc" id="aclassVectorList_html_afe42d07454b3fe1c0670798ea14d45fd"><div class="ttname"><a href="classVectorList.html#afe42d07454b3fe1c0670798ea14d45fd">VectorList::insert</a></div><div class="ttdeci">void insert(size_t index, const T &amp;value)</div><div class="ttdoc">Insere um elemento na posição especificada.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

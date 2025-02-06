@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EstruturaDeDados: Código-Fonte de /home/evandrocrr/Documents/Workspace/UNIVALI/ed_aluno/include/doubly_linked_list.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EstruturaDeDados
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">doubly_linked_list.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="doubly__linked__list_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classDoublyLinkedList.html">DoublyLinkedList</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">struct </span>Node {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Node(<span class="keyword">const</span> T &amp;value);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    ~Node();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    T value;     </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Node *next;  </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    Node *prev;  </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> U&gt;</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html">   45</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#adc1ee7fe2f3f85307861ea0d25dce391">   51</a></span>    <span class="keyword">auto</span> &amp;<a class="code hl_function" href="classDoublyLinkedList_1_1Iterator.html#adc1ee7fe2f3f85307861ea0d25dce391">operator*</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#a0eb7437aaf44e04c3e61fe9fffb2ed59">   57</a></span>    <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator&lt;U&gt;</a> &amp;<a class="code hl_function" href="classDoublyLinkedList_1_1Iterator.html#a0eb7437aaf44e04c3e61fe9fffb2ed59">operator++</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#a12ef2e81f8331b011ccf2b8e43b7b576">   63</a></span>    <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator&lt;U&gt;</a> &amp;<a class="code hl_function" href="classDoublyLinkedList_1_1Iterator.html#a12ef2e81f8331b011ccf2b8e43b7b576">operator--</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#a0f4821783140a901fdeb3375255db3cb">   71</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList_1_1Iterator.html#a0f4821783140a901fdeb3375255db3cb">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator&lt;U&gt;</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#a77b11cf0233a76b1bfc4a112d1e0a7c2">   79</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList_1_1Iterator.html#a77b11cf0233a76b1bfc4a112d1e0a7c2">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator&lt;U&gt;</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#ac22f1b19d0bf851c414eb76cde9cff1e">   87</a></span>    <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator&lt;U&gt;</a> <a class="code hl_function" href="classDoublyLinkedList_1_1Iterator.html#ac22f1b19d0bf851c414eb76cde9cff1e">operator+</a>(<span class="keywordtype">size_t</span> offset) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#a2702a27b793bee4be0aa3e35e94e7407">   95</a></span>    <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator&lt;U&gt;</a> <a class="code hl_function" href="classDoublyLinkedList_1_1Iterator.html#a2702a27b793bee4be0aa3e35e94e7407">operator-</a>(<span class="keywordtype">size_t</span> offset) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#a78fbfa0b249a9859b2d70eee377dd691">  102</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classDoublyLinkedList_1_1Iterator.html#a78fbfa0b249a9859b2d70eee377dd691">operator-</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator&lt;U&gt;</a> other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">Iterator</a>(U *ptr, <span class="keywordtype">bool</span> end);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    U *node;   </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">bool</span> end;  </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classDoublyLinkedList_1_1Iterator.html#a8518425fc192346c00bedb825184bcf1">  115</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classDoublyLinkedList.html">DoublyLinkedList</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  };</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a0a56271cf54871caadfc05f017cc6089">  118</a></span>  <span class="keyword">using </span><a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">iterator</a> = <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">DoublyLinkedList&lt;T&gt;::Iterator</a>&lt;Node&gt;;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#aa887e97ad969f38c9db0a60d42994585">  119</a></span>  <span class="keyword">using </span><a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">const_iterator</a> = <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">DoublyLinkedList&lt;T&gt;::Iterator</a>&lt;<span class="keyword">const</span> Node&gt;;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#ab16fd160493247d26572b9bef7fa078b">  124</a></span>  <a class="code hl_function" href="classDoublyLinkedList.html#ab16fd160493247d26572b9bef7fa078b">DoublyLinkedList</a>();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a2820eec930b790ff967665a79b3a98b1">  130</a></span>  <a class="code hl_function" href="classDoublyLinkedList.html#a2820eec930b790ff967665a79b3a98b1">DoublyLinkedList</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDoublyLinkedList.html">DoublyLinkedList</a> &amp;list);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a916fddacbc77be61d4d7962facf4a450">  137</a></span>  <a class="code hl_class" href="classDoublyLinkedList.html">DoublyLinkedList</a> &amp;<a class="code hl_function" href="classDoublyLinkedList.html#a916fddacbc77be61d4d7962facf4a450">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDoublyLinkedList.html">DoublyLinkedList</a> &amp;list);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#ade7fbfd3c437d039c88ea9c3b9445150">  144</a></span>  <a class="code hl_function" href="classDoublyLinkedList.html#ade7fbfd3c437d039c88ea9c3b9445150">~DoublyLinkedList</a>();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a6071aef95e9615ce1672e760173ebc71">  150</a></span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="classDoublyLinkedList.html#a6071aef95e9615ce1672e760173ebc71">size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a0007135e206b011cfc4bd69919d33b98">  156</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#a0007135e206b011cfc4bd69919d33b98">empty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#ae35c8d79b1c0946a871631144919973e">  163</a></span>  <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">const_iterator</a> <a class="code hl_function" href="classDoublyLinkedList.html#ae35c8d79b1c0946a871631144919973e">begin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#abd7c8476d188237093424287b6caab57">  170</a></span>  <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">const_iterator</a> <a class="code hl_function" href="classDoublyLinkedList.html#abd7c8476d188237093424287b6caab57">end</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a260e7ba119bd6c42e8e925a2eb366786">  177</a></span>  <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">iterator</a> <a class="code hl_function" href="classDoublyLinkedList.html#a260e7ba119bd6c42e8e925a2eb366786">begin</a>();</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a97fafdf3a898fa3118b4e80601cc5424">  184</a></span>  <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">iterator</a> <a class="code hl_function" href="classDoublyLinkedList.html#a97fafdf3a898fa3118b4e80601cc5424">end</a>();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#ac41655c8deb3b123cf48bd8890b9f07e">  190</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#ac41655c8deb3b123cf48bd8890b9f07e">push_front</a>(<span class="keyword">const</span> T &amp;value);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#abf997ec262297608fde8c54e7805051c">  196</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#abf997ec262297608fde8c54e7805051c">push_back</a>(<span class="keyword">const</span> T &amp;value);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a90911120bff62cb55dace6103b4b0a1a">  203</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#a90911120bff62cb55dace6103b4b0a1a">insert</a>(<a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">iterator</a> pos, <span class="keyword">const</span> T &amp;value);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#ad545c70100c52b43a8c10aa4a23a04dd">  210</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#ad545c70100c52b43a8c10aa4a23a04dd">pop_front</a>();</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a652f8d6b24cc6cb5f65d6042387f2389">  217</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#a652f8d6b24cc6cb5f65d6042387f2389">pop_back</a>();</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#acabe51eb3a4d5703ef3461a1b8ef1728">  224</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#acabe51eb3a4d5703ef3461a1b8ef1728">erase</a>(<a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">iterator</a> first, <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">iterator</a> last);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a988dab817e94dc8f7b0e8e5b90383971">  229</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#a988dab817e94dc8f7b0e8e5b90383971">clear</a>();</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a7da4717ee601dd5b68fceff88a23ec06">  237</a></span>  <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">const_iterator</a> <a class="code hl_function" href="classDoublyLinkedList.html#a7da4717ee601dd5b68fceff88a23ec06">find</a>(<span class="keyword">const</span> T &amp;item) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a0fc3b91b256e645e7e04369270adbf8f">  245</a></span>  <a class="code hl_class" href="classDoublyLinkedList_1_1Iterator.html">iterator</a> <a class="code hl_function" href="classDoublyLinkedList.html#a0fc3b91b256e645e7e04369270adbf8f">find</a>(<span class="keyword">const</span> T &amp;item);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a2c3119e56ba02105754fec93a04a2916">  253</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#a2c3119e56ba02105754fec93a04a2916">contains</a>(<span class="keyword">const</span> T &amp;item) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a5527157124e2138a67c71e150e31e82f">  261</a></span>  T &amp;<a class="code hl_function" href="classDoublyLinkedList.html#a5527157124e2138a67c71e150e31e82f">operator[]</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a5e89e37de583264093afeb248b461f4d">  269</a></span>  <span class="keyword">const</span> T &amp;<a class="code hl_function" href="classDoublyLinkedList.html#a5e89e37de583264093afeb248b461f4d">operator[]</a>(<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#ad707e41ea13719de130e24e8ec94ae5c">  274</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#ad707e41ea13719de130e24e8ec94ae5c">print</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  Node *head;   </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  Node *tail;   </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keywordtype">size_t</span> _size; </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>};</div>
+</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#include &quot;../src/doubly_linked_list.hpp&quot;</span></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html">DoublyLinkedList::Iterator</a></div><div class="ttdoc">Iterador da lista duplamente encadeada.</div><div class="ttdef"><b>Definição</b> doubly_linked_list.hpp:45</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html_a0eb7437aaf44e04c3e61fe9fffb2ed59"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html#a0eb7437aaf44e04c3e61fe9fffb2ed59">DoublyLinkedList::Iterator::operator++</a></div><div class="ttdeci">Iterator&lt; U &gt; &amp; operator++()</div><div class="ttdoc">Incrementa o iterador para o próximo nó.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html_a0f4821783140a901fdeb3375255db3cb"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html#a0f4821783140a901fdeb3375255db3cb">DoublyLinkedList::Iterator::operator==</a></div><div class="ttdeci">bool operator==(const Iterator&lt; U &gt; &amp;other) const</div><div class="ttdoc">Compara dois iteradores para verificar se são iguais.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html_a12ef2e81f8331b011ccf2b8e43b7b576"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html#a12ef2e81f8331b011ccf2b8e43b7b576">DoublyLinkedList::Iterator::operator--</a></div><div class="ttdeci">Iterator&lt; U &gt; &amp; operator--()</div><div class="ttdoc">Decrementa o iterador para o nó anterior.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html_a2702a27b793bee4be0aa3e35e94e7407"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html#a2702a27b793bee4be0aa3e35e94e7407">DoublyLinkedList::Iterator::operator-</a></div><div class="ttdeci">Iterator&lt; U &gt; operator-(size_t offset) const</div><div class="ttdoc">Retorna um iterador retrocedido por um número específico de posições.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html_a77b11cf0233a76b1bfc4a112d1e0a7c2"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html#a77b11cf0233a76b1bfc4a112d1e0a7c2">DoublyLinkedList::Iterator::operator!=</a></div><div class="ttdeci">bool operator!=(const Iterator&lt; U &gt; &amp;other) const</div><div class="ttdoc">Compara dois iteradores para verificar se são diferentes.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html_a78fbfa0b249a9859b2d70eee377dd691"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html#a78fbfa0b249a9859b2d70eee377dd691">DoublyLinkedList::Iterator::operator-</a></div><div class="ttdeci">size_t operator-(const Iterator&lt; U &gt; other) const</div><div class="ttdoc">Calcula a distância entre dois iteradores.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html_ac22f1b19d0bf851c414eb76cde9cff1e"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html#ac22f1b19d0bf851c414eb76cde9cff1e">DoublyLinkedList::Iterator::operator+</a></div><div class="ttdeci">Iterator&lt; U &gt; operator+(size_t offset) const</div><div class="ttdoc">Retorna um iterador avançado por um número específico de posições.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_1_1Iterator_html_adc1ee7fe2f3f85307861ea0d25dce391"><div class="ttname"><a href="classDoublyLinkedList_1_1Iterator.html#adc1ee7fe2f3f85307861ea0d25dce391">DoublyLinkedList::Iterator::operator*</a></div><div class="ttdeci">auto &amp; operator*() const</div><div class="ttdoc">Desreferencia o iterador.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html"><div class="ttname"><a href="classDoublyLinkedList.html">DoublyLinkedList</a></div><div class="ttdoc">Representa uma lista duplamente encadeada de elementos do tipo genérico T.</div><div class="ttdef"><b>Definição</b> doubly_linked_list.hpp:14</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a0007135e206b011cfc4bd69919d33b98"><div class="ttname"><a href="classDoublyLinkedList.html#a0007135e206b011cfc4bd69919d33b98">DoublyLinkedList::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdoc">Verifica se a lista está vazia.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a0fc3b91b256e645e7e04369270adbf8f"><div class="ttname"><a href="classDoublyLinkedList.html#a0fc3b91b256e645e7e04369270adbf8f">DoublyLinkedList::find</a></div><div class="ttdeci">iterator find(const T &amp;item)</div><div class="ttdoc">Encontra um item na lista e retorna um iterador para ele.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a260e7ba119bd6c42e8e925a2eb366786"><div class="ttname"><a href="classDoublyLinkedList.html#a260e7ba119bd6c42e8e925a2eb366786">DoublyLinkedList::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Retorna um iterador para o início da lista (apontando para o primeiro nó).</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a2820eec930b790ff967665a79b3a98b1"><div class="ttname"><a href="classDoublyLinkedList.html#a2820eec930b790ff967665a79b3a98b1">DoublyLinkedList::DoublyLinkedList</a></div><div class="ttdeci">DoublyLinkedList(const DoublyLinkedList &amp;list)</div><div class="ttdoc">Construtor de cópia da lista duplamente encadeada.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a2c3119e56ba02105754fec93a04a2916"><div class="ttname"><a href="classDoublyLinkedList.html#a2c3119e56ba02105754fec93a04a2916">DoublyLinkedList::contains</a></div><div class="ttdeci">bool contains(const T &amp;item) const</div><div class="ttdoc">Verifica se um item existe na lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a5527157124e2138a67c71e150e31e82f"><div class="ttname"><a href="classDoublyLinkedList.html#a5527157124e2138a67c71e150e31e82f">DoublyLinkedList::operator[]</a></div><div class="ttdeci">T &amp; operator[](size_t index)</div><div class="ttdoc">Acessa um elemento por seu índice.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a5e89e37de583264093afeb248b461f4d"><div class="ttname"><a href="classDoublyLinkedList.html#a5e89e37de583264093afeb248b461f4d">DoublyLinkedList::operator[]</a></div><div class="ttdeci">const T &amp; operator[](size_t index) const</div><div class="ttdoc">Acessa um elemento por seu índice.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a6071aef95e9615ce1672e760173ebc71"><div class="ttname"><a href="classDoublyLinkedList.html#a6071aef95e9615ce1672e760173ebc71">DoublyLinkedList::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Obtém o tamanho da lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a652f8d6b24cc6cb5f65d6042387f2389"><div class="ttname"><a href="classDoublyLinkedList.html#a652f8d6b24cc6cb5f65d6042387f2389">DoublyLinkedList::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdoc">Remove o último elemento da lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a7da4717ee601dd5b68fceff88a23ec06"><div class="ttname"><a href="classDoublyLinkedList.html#a7da4717ee601dd5b68fceff88a23ec06">DoublyLinkedList::find</a></div><div class="ttdeci">const_iterator find(const T &amp;item) const</div><div class="ttdoc">Encontra um item na lista e retorna um iterador para ele.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a90911120bff62cb55dace6103b4b0a1a"><div class="ttname"><a href="classDoublyLinkedList.html#a90911120bff62cb55dace6103b4b0a1a">DoublyLinkedList::insert</a></div><div class="ttdeci">void insert(iterator pos, const T &amp;value)</div><div class="ttdoc">Insere um elemento em uma posição específica da lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a916fddacbc77be61d4d7962facf4a450"><div class="ttname"><a href="classDoublyLinkedList.html#a916fddacbc77be61d4d7962facf4a450">DoublyLinkedList::operator=</a></div><div class="ttdeci">DoublyLinkedList &amp; operator=(const DoublyLinkedList &amp;list)</div><div class="ttdoc">Operador de atribuição para copiar uma lista duplamente encadeada.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a97fafdf3a898fa3118b4e80601cc5424"><div class="ttname"><a href="classDoublyLinkedList.html#a97fafdf3a898fa3118b4e80601cc5424">DoublyLinkedList::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Retorna um iterador para o final da lista (apontando para após o último nó).</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a988dab817e94dc8f7b0e8e5b90383971"><div class="ttname"><a href="classDoublyLinkedList.html#a988dab817e94dc8f7b0e8e5b90383971">DoublyLinkedList::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Remove todos os elementos da lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_ab16fd160493247d26572b9bef7fa078b"><div class="ttname"><a href="classDoublyLinkedList.html#ab16fd160493247d26572b9bef7fa078b">DoublyLinkedList::DoublyLinkedList</a></div><div class="ttdeci">DoublyLinkedList()</div><div class="ttdoc">Construtor padrão da lista duplamente encadeada.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_abd7c8476d188237093424287b6caab57"><div class="ttname"><a href="classDoublyLinkedList.html#abd7c8476d188237093424287b6caab57">DoublyLinkedList::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdoc">Retorna um iterador para o final da lista (apontando para após o último nó).</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_abf997ec262297608fde8c54e7805051c"><div class="ttname"><a href="classDoublyLinkedList.html#abf997ec262297608fde8c54e7805051c">DoublyLinkedList::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value)</div><div class="ttdoc">Adiciona um elemento ao final da lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_ac41655c8deb3b123cf48bd8890b9f07e"><div class="ttname"><a href="classDoublyLinkedList.html#ac41655c8deb3b123cf48bd8890b9f07e">DoublyLinkedList::push_front</a></div><div class="ttdeci">void push_front(const T &amp;value)</div><div class="ttdoc">Adiciona um elemento ao início da lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_acabe51eb3a4d5703ef3461a1b8ef1728"><div class="ttname"><a href="classDoublyLinkedList.html#acabe51eb3a4d5703ef3461a1b8ef1728">DoublyLinkedList::erase</a></div><div class="ttdeci">void erase(iterator first, iterator last)</div><div class="ttdoc">Remove uma faixa de elementos da lista, definida pelos iteradores.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_ad545c70100c52b43a8c10aa4a23a04dd"><div class="ttname"><a href="classDoublyLinkedList.html#ad545c70100c52b43a8c10aa4a23a04dd">DoublyLinkedList::pop_front</a></div><div class="ttdeci">void pop_front()</div><div class="ttdoc">Remove o primeiro elemento da lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_ad707e41ea13719de130e24e8ec94ae5c"><div class="ttname"><a href="classDoublyLinkedList.html#ad707e41ea13719de130e24e8ec94ae5c">DoublyLinkedList::print</a></div><div class="ttdeci">void print() const</div><div class="ttdoc">Imprime os elementos da lista.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_ade7fbfd3c437d039c88ea9c3b9445150"><div class="ttname"><a href="classDoublyLinkedList.html#ade7fbfd3c437d039c88ea9c3b9445150">DoublyLinkedList::~DoublyLinkedList</a></div><div class="ttdeci">~DoublyLinkedList()</div><div class="ttdoc">Destruidor da lista duplamente encadeada.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_ae35c8d79b1c0946a871631144919973e"><div class="ttname"><a href="classDoublyLinkedList.html#ae35c8d79b1c0946a871631144919973e">DoublyLinkedList::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdoc">Retorna um iterador para o início da lista (apontando para o primeiro nó).</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

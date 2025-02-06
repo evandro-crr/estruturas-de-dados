@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EstruturaDeDados: Código-Fonte de /home/evandrocrr/Documents/Workspace/UNIVALI/ed_aluno/include/pair.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EstruturaDeDados
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">pair.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="pair_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keyword">class</span> U&gt;</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classPair.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classPair.html">Pair</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classPair.html#aa3cae6e5d0116855470f94590a6a86e8">   28</a></span>  <a class="code hl_function" href="classPair.html#aa3cae6e5d0116855470f94590a6a86e8">Pair</a>(<span class="keyword">const</span> T&amp; <a class="code hl_function" href="classPair.html#a80472aa3ce4c1f0e59d5b3afc9882cd8">first</a>, <span class="keyword">const</span> U&amp; <a class="code hl_function" href="classPair.html#a6f526113a9675d7ad15d091e5dcf2f35">second</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classPair.html#a80472aa3ce4c1f0e59d5b3afc9882cd8">   39</a></span>  <span class="keyword">const</span> T&amp; <a class="code hl_function" href="classPair.html#a80472aa3ce4c1f0e59d5b3afc9882cd8">first</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classPair.html#a0c59cd0f5fa23c4a971ac0fece03e7cb">   50</a></span>  T&amp; <a class="code hl_function" href="classPair.html#a0c59cd0f5fa23c4a971ac0fece03e7cb">first</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classPair.html#a6f526113a9675d7ad15d091e5dcf2f35">   61</a></span>  <span class="keyword">const</span> U&amp; <a class="code hl_function" href="classPair.html#a6f526113a9675d7ad15d091e5dcf2f35">second</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classPair.html#a7cab30810a453a008ec6d18e1b45b37b">   72</a></span>  U&amp; <a class="code hl_function" href="classPair.html#a7cab30810a453a008ec6d18e1b45b37b">second</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classPair.html#a91bbbbf33fd7e59ed1c8ce708f34ebdf">   83</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classPair.html#a91bbbbf33fd7e59ed1c8ce708f34ebdf">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPair.html">Pair&lt;T, U&gt;</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classPair.html#ae59d79d6b064600ddb3083c435c4533f">   94</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classPair.html#ae59d79d6b064600ddb3083c435c4533f">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPair.html">Pair&lt;T, U&gt;</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classPair.html#ad535bfe4f47ed4b7021f1d9c8da470ac">  107</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classPair.html#ad535bfe4f47ed4b7021f1d9c8da470ac">operator&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPair.html">Pair&lt;T, U&gt;</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classPair.html#afd4b0fbc8c9e268cf3a8ad3b9c1ced1f">  120</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classPair.html#afd4b0fbc8c9e268cf3a8ad3b9c1ced1f">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPair.html">Pair&lt;T, U&gt;</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classPair.html#a4a5b9a442c410bcb05cd164665b09199">  133</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classPair.html#a4a5b9a442c410bcb05cd164665b09199">operator&gt;=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPair.html">Pair&lt;T, U&gt;</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classPair.html#a6a9c787a302dded9f9ac84ab203e5126">  146</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classPair.html#a6a9c787a302dded9f9ac84ab203e5126">operator&lt;=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPair.html">Pair&lt;T, U&gt;</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  T _first;   </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  U _second;  </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>};</div>
+</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#include &quot;../src/pair.hpp&quot;</span></div>
+<div class="ttc" id="aclassPair_html"><div class="ttname"><a href="classPair.html">Pair</a></div><div class="ttdoc">Classe genérica que representa um par de valores de tipos diferentes.</div><div class="ttdef"><b>Definição</b> pair.hpp:17</div></div>
+<div class="ttc" id="aclassPair_html_a0c59cd0f5fa23c4a971ac0fece03e7cb"><div class="ttname"><a href="classPair.html#a0c59cd0f5fa23c4a971ac0fece03e7cb">Pair::first</a></div><div class="ttdeci">T &amp; first()</div><div class="ttdoc">Obtém o primeiro valor do par (não constante).</div></div>
+<div class="ttc" id="aclassPair_html_a4a5b9a442c410bcb05cd164665b09199"><div class="ttname"><a href="classPair.html#a4a5b9a442c410bcb05cd164665b09199">Pair::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const Pair&lt; T, U &gt; &amp;other) const</div><div class="ttdoc">Compara se o par atual é maior ou igual ao outro.</div></div>
+<div class="ttc" id="aclassPair_html_a6a9c787a302dded9f9ac84ab203e5126"><div class="ttname"><a href="classPair.html#a6a9c787a302dded9f9ac84ab203e5126">Pair::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const Pair&lt; T, U &gt; &amp;other) const</div><div class="ttdoc">Compara se o par atual é menor ou igual ao outro.</div></div>
+<div class="ttc" id="aclassPair_html_a6f526113a9675d7ad15d091e5dcf2f35"><div class="ttname"><a href="classPair.html#a6f526113a9675d7ad15d091e5dcf2f35">Pair::second</a></div><div class="ttdeci">const U &amp; second() const</div><div class="ttdoc">Obtém o segundo valor do par.</div></div>
+<div class="ttc" id="aclassPair_html_a7cab30810a453a008ec6d18e1b45b37b"><div class="ttname"><a href="classPair.html#a7cab30810a453a008ec6d18e1b45b37b">Pair::second</a></div><div class="ttdeci">U &amp; second()</div><div class="ttdoc">Obtém o segundo valor do par (não constante).</div></div>
+<div class="ttc" id="aclassPair_html_a80472aa3ce4c1f0e59d5b3afc9882cd8"><div class="ttname"><a href="classPair.html#a80472aa3ce4c1f0e59d5b3afc9882cd8">Pair::first</a></div><div class="ttdeci">const T &amp; first() const</div><div class="ttdoc">Obtém o primeiro valor do par.</div></div>
+<div class="ttc" id="aclassPair_html_a91bbbbf33fd7e59ed1c8ce708f34ebdf"><div class="ttname"><a href="classPair.html#a91bbbbf33fd7e59ed1c8ce708f34ebdf">Pair::operator==</a></div><div class="ttdeci">bool operator==(const Pair&lt; T, U &gt; &amp;other) const</div><div class="ttdoc">Compara se dois pares são iguais.</div></div>
+<div class="ttc" id="aclassPair_html_aa3cae6e5d0116855470f94590a6a86e8"><div class="ttname"><a href="classPair.html#aa3cae6e5d0116855470f94590a6a86e8">Pair::Pair</a></div><div class="ttdeci">Pair(const T &amp;first, const U &amp;second)</div><div class="ttdoc">Construtor que inicializa o par com dois valores.</div></div>
+<div class="ttc" id="aclassPair_html_ad535bfe4f47ed4b7021f1d9c8da470ac"><div class="ttname"><a href="classPair.html#ad535bfe4f47ed4b7021f1d9c8da470ac">Pair::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Pair&lt; T, U &gt; &amp;other) const</div><div class="ttdoc">Compara se o par atual é maior que o outro.</div></div>
+<div class="ttc" id="aclassPair_html_ae59d79d6b064600ddb3083c435c4533f"><div class="ttname"><a href="classPair.html#ae59d79d6b064600ddb3083c435c4533f">Pair::operator!=</a></div><div class="ttdeci">bool operator!=(const Pair&lt; T, U &gt; &amp;other) const</div><div class="ttdoc">Compara se dois pares são diferentes.</div></div>
+<div class="ttc" id="aclassPair_html_afd4b0fbc8c9e268cf3a8ad3b9c1ced1f"><div class="ttname"><a href="classPair.html#afd4b0fbc8c9e268cf3a8ad3b9c1ced1f">Pair::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Pair&lt; T, U &gt; &amp;other) const</div><div class="ttdoc">Compara se o par atual é menor que o outro.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
